@@ -1,0 +1,30 @@
+.hero {
+  background-image: url("../asset/Home/Hero.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 100vh auto;
+  height: 80vh;
+  color: #2985b0;
+  display: flex;
+  align-items: center;
+
+  &__title {
+    height: 50vh;
+    width: 40vw;
+    background-color: aqua;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+
+    & > h1,
+    & > p {
+      display: block;
+    }
+  }
+}
+
+.services {
+  margin: 0 auto;
+  max-width: 1200px;
+}

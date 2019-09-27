@@ -1,0 +1,49 @@
+header {
+  font-family: $coolveticaRegular;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  color: transparent;
+  padding-left: 30px;
+  padding-right: 10px;
+  align-items: center;
+
+  & > a {
+    color: #2985b0;
+  }
+}
+
+.logo {
+  display: block;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-item a {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-item:hover {
+  background-color: white;
+}
+
+.nav-item:hover a {
+  color: darkgreen;
+}
+
+.logo img {
+  width: 50px;
+  vertical-align: middle;
+}
