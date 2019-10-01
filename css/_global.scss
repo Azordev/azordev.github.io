@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Coolvetica Rg";
+  src: url("../fonts/coolvetica/coolvetica\ rg.ttf");
+}
+@font-face {
+  font-family: "Coolvetica Condensed Rg";
+  src: url("../fonts/coolvetica/coolvetica\ condensed\ rg.ttf");
+}
+@font-face {
+  font-family: "Coolvetica Compressed Rg";
+  src: url("../fonts/coolvetica/coolvetica\ compressed\ rg.ttf");
+}
+@font-face {
+  font-family: "Coolvetica Crammed Rg";
+  src: url("../fonts/coolvetica/coolvetica\ crammed\ rg.ttf");
+}
+$coolveticaBold: "Coolvetica Rg", sans-serif;
+$coolveticaRegular: "Coolvetica Condensed Rg", sans-serif;
+$coolveticaLight: "Coolvetica Compressed Rg", sans-serif;
+$coolveticaThin: "Coolvetica Crammed Rg", sans-serif;
+$primary: #2985b0;
+$secondary: #36a9e0;

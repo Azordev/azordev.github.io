@@ -2,11 +2,16 @@
   background-image: url("../asset/Home/Hero.png");
   background-repeat: no-repeat;
   background-position: right top;
-  background-size: 100vh auto;
-  height: 80vh;
+  background-size:  auto 45vw;
+  height: 700px;
   color: #2985b0;
   display: flex;
   align-items: center;
+
+  &__container {
+    max-width: 1200px;
+    justify-self: center;
+  }
 
   &__title {
     height: 50vh;
