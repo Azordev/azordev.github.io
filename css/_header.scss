@@ -20,16 +20,22 @@ nav {
 
 .logo {
   display: block;
+  background-color: white;
 }
 
 .nav-links {
   list-style: none;
-  display: flex;
+  display: none;
   letter-spacing: 1px;
 
-  &>.nav-item:last-child {
+  & > .nav-item:last-child {
     border: 1.5px solid white;
     border-radius: 20px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .nav-links {
+    display: flex;
   }
 }
 
@@ -45,7 +51,7 @@ nav {
   background-color: white;
   border-radius: 20px;
 
-  &>a{
+  & > a {
     color: $secondary;
   }
 }
