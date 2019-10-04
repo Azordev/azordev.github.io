@@ -1,4 +1,5 @@
 .hero {
+  font-family: $coolveticaRegular;
   background-image: url("../asset/Home/Hero.png");
   background-repeat: no-repeat;
   background-position: right top;
@@ -6,6 +7,7 @@
   height: 350px;
   color: #2985b0;
   display: flex;
+  font-size: 12rem;
 
   &__container {
     max-width: 1200px;
@@ -20,8 +22,22 @@
     display: flex;
     flex-direction: column;
     text-align: left;
-    align-items: center;
-    justify-content: center;
+    font-size: 28rem;
+    line-height: 28rem;
+
+    &>h1{
+      font-size: 60rem;
+    }
+
+    &>h2, &>h1{
+      letter-spacing: 3px;
+      margin: 5px 0;
+    }
+    &>p{
+      color: $secondary;
+      letter-spacing: 1px;
+      margin: 5px 0;
+    }
   }
 
   &__transparent{
@@ -35,6 +51,7 @@
     align-items: center;
     background-size:  auto 40vw;
     background-color: transparent;
+    font-size: 22rem;
 
     &__title {
       padding: 50px;
