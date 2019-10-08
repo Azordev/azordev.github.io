@@ -1,68 +1,73 @@
 header {
   font-family: $coolveticaBold;
-  width: 100%;
-  position: absolute;
-  top: 0;
 }
 
 nav {
+  background-color: transparent;
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 1200px;
   display: flex;
   justify-content: space-between;
-  color: transparent;
   align-items: center;
   font-size: 14rem;
-
-  & > a {
-    color: $primary;
-  }
 }
 
 .logo {
   display: block;
-  background-color: white;
-
-  &>h1{
   color: $primary;
-  font-size: 14rem;
+
+  & > h1 {
+    color: $primary;
+    font-size: 14rem;
   }
 }
 
 .nav-links {
-  list-style: none;
   display: none;
-  letter-spacing: 1px;
+}
 
-  & > .nav-item:last-child {
-    border: 1.5px solid white;
+.logo img {
+  width: 50px;
+  vertical-align: middle;
+}
+
+@media only screen and (min-width: 700px) {
+  .nav-links {
+    display: flex;
+    letter-spacing: 1px;
+
+    & > .nav-item:last-child {
+      border: 1.5px solid rgb(88, 8, 88);
+      border-radius: 20px;
+
+      &:hover {
+        background-color: rgb(88, 8, 88);
+      }
+      
+      &:hover > a {
+        color: white;
+
+      }
+    }
+  }
+
+  .nav-item a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .nav-item:hover {
     border-radius: 20px;
+
+    & > a {
+      color: $secondary;
+    }
   }
 }
 @media only screen and (min-width: 1200px) {
   .nav-links {
     display: flex;
   }
-}
-
-.nav-item a {
-  display: inline-block;
-  padding: 10px 15px;
-  text-decoration: none;
-  color: white;
-  text-align: center;
-}
-
-.nav-item:hover {
-  background-color: white;
-  border-radius: 20px;
-
-  & > a {
-    color: $secondary;
-  }
-}
-
-.logo img {
-  width: 50px;
-  vertical-align: middle;
 }

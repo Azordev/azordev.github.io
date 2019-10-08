@@ -336,34 +336,27 @@ select {
 
 header {
   font-family: "Coolvetica Rg", sans-serif;
-  width: 100%;
-  position: absolute;
-  top: 0;
 }
 
 nav {
+  background-color: transparent;
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  color: transparent;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   font-size: 14rem;
 }
 
-nav > a {
-  color: #2985b0;
-}
-
 .logo {
   display: block;
-  background-color: white;
+  color: #2985b0;
 }
 
 .logo > h1 {
@@ -372,14 +365,43 @@ nav > a {
 }
 
 .nav-links {
-  list-style: none;
   display: none;
-  letter-spacing: 1px;
 }
 
-.nav-links > .nav-item:last-child {
-  border: 1.5px solid white;
-  border-radius: 20px;
+.logo img {
+  width: 50px;
+  vertical-align: middle;
+}
+
+@media only screen and (min-width: 700px) {
+  .nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    letter-spacing: 1px;
+  }
+  .nav-links > .nav-item:last-child {
+    border: 1.5px solid #580858;
+    border-radius: 20px;
+  }
+  .nav-links > .nav-item:last-child:hover {
+    background-color: #580858;
+  }
+  .nav-links > .nav-item:last-child:hover > a {
+    color: white;
+  }
+  .nav-item a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: center;
+  }
+  .nav-item:hover {
+    border-radius: 20px;
+  }
+  .nav-item:hover > a {
+    color: #36a9e0;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -390,34 +412,8 @@ nav > a {
   }
 }
 
-.nav-item a {
-  display: inline-block;
-  padding: 10px 15px;
-  text-decoration: none;
-  color: white;
-  text-align: center;
-}
-
-.nav-item:hover {
-  background-color: white;
-  border-radius: 20px;
-}
-
-.nav-item:hover > a {
-  color: #36a9e0;
-}
-
-.logo img {
-  width: 50px;
-  vertical-align: middle;
-}
-
 .hero {
   font-family: "Coolvetica Condensed Rg", sans-serif;
-  background-image: url("../asset/Home/Hero.png");
-  background-repeat: no-repeat;
-  background-position: right top;
-  background-size: 350px auto;
   height: 350px;
   color: #2985b0;
   display: -webkit-box;
@@ -433,9 +429,7 @@ nav > a {
 
 .hero__title {
   border-radius: 16px;
-  margin-top: 75px;
-  width: 70vw;
-  background-color: rgba(243, 243, 243, 0.9);
+  margin: 75px 5vw 20px 5vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -452,7 +446,8 @@ nav > a {
   font-size: 60rem;
 }
 
-.hero__title > h2, .hero__title > h1 {
+.hero__title > h2,
+.hero__title > h1 {
   letter-spacing: 3px;
   margin: 5px 0;
 }
@@ -473,8 +468,10 @@ nav > a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-size: auto 40vw;
-    background-color: transparent;
+    background-image: url("../asset/Home/Hero.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: auto 35vw;
     font-size: 22rem;
   }
   .hero__title {
@@ -491,6 +488,7 @@ nav > a {
 @media only screen and (min-width: 1200px) {
   .hero {
     height: 700px;
+    background-position: right top;
     background-size: auto 40vw;
   }
   .hero__title {
@@ -503,7 +501,6 @@ nav > a {
 .services {
   font-size: 20rem;
   color: #2985b0;
-  width: 100vw;
   margin: 50px 0;
   font-family: "Coolvetica Condensed Rg", sans-serif;
 }
@@ -516,11 +513,15 @@ nav > a {
 }
 
 .services__header > h1 {
-  font-size: 30rem;
+  font-size: 44rem;
+}
+
+.services__header > h4 {
+  font-size: 30px;
 }
 
 .services__header > h4, .services__header > h1 {
-  padding-left: 5vw;
+  padding: 10px 5vw;
 }
 
 .services__cardGroups {
@@ -531,7 +532,6 @@ nav > a {
   display: grid;
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  margin: 10px auto;
 }
 
 .servicesCard {
@@ -541,7 +541,7 @@ nav > a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 90%;
+  width: 80%;
   height: 300px;
   background-color: white;
   -webkit-box-shadow: 0px 15px 20px -4px rgba(135, 135, 135, 0.5);
@@ -581,10 +581,69 @@ nav > a {
 }
 
 .projects {
-  width: 100vw;
-  background-color: #2985b0;
   color: white;
   font-family: "Coolvetica Condensed Rg", sans-serif;
   font-size: 20rem;
+}
+
+.projects__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #2985b0;
+  line-height: 20rem;
+  padding-bottom: 10px;
+}
+
+.projects__title > div {
+  border-bottom: 5px dashed #36a9e0;
+  letter-spacing: 3px;
+  padding: 3px;
+}
+
+.projects__title > div > h1 {
+  font-size: 44rem;
+  padding: 10px;
+}
+
+.projects__title > div > h4 {
+  font-size: 36rem;
+}
+
+.projects__info {
+  background-color: #2985b0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects__image {
+  width: 40%;
+  height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects__explain {
+  width: 40%;
+  text-align: end;
+  padding: 30px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */

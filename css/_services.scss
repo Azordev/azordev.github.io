@@ -1,7 +1,6 @@
 .services{
     font-size: 20rem;
     color: $primary;
-    width: 100vw;
     margin: 50px 0;
     font-family: $coolveticaRegular;
     
@@ -12,11 +11,15 @@
         padding-bottom: 10px;
 
         &>h1 {
-            font-size: 30rem;
-          }
-
+            font-size: 44rem;
+        }
+        
+        &>h4{
+            font-size: 30px;
+        }
+        
         &>h4, &>h1{
-            padding-left: 5vw; 
+            padding: 10px 5vw;
         }
     }
 
@@ -26,7 +29,6 @@
         justify-items: center;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        margin: 10px auto;
     }
 }
 
@@ -34,7 +36,7 @@
     display: grid;
     justify-items: center;
     align-items: center;
-    width: 90%;
+    width: 80%;
     height: 300px;
     background-color: white;
     box-shadow: 0px 15px 20px -4px rgba(135,135,135,0.5);

@@ -1,7 +1,49 @@
-.projects{
-    width: 100vw;
+.projects {
+  color: white;
+  font-family: $coolveticaRegular;
+  font-size: 20rem;
+
+  &__title {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: $primary;
+    line-height: 20rem;
+    padding-bottom: 10px;
+
+    & > div {
+      border-bottom: 5px dashed $secondary;
+      letter-spacing: 3px;
+      padding: 3px;
+
+      & > h1 {
+        font-size: 44rem;
+        padding: 10px;
+      }
+
+      & > h4 {
+        font-size: 36rem;
+      }
+    }
+  }
+
+  &__info {
     background-color: $primary;
-    color: white;
-    font-family: $coolveticaRegular;
-    font-size: 20rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__image {
+    width: 40%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+  }
+  &__explain {
+    width: 40%;
+    text-align: end;
+    padding: 30px;
+    flex-grow: 1;
+    text-align: center
+  }
 }

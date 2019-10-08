@@ -1,9 +1,5 @@
 .hero {
   font-family: $coolveticaRegular;
-  background-image: url("../asset/Home/Hero.png");
-  background-repeat: no-repeat;
-  background-position: right top;
-  background-size:  350px auto;
   height: 350px;
   color: #2985b0;
   display: flex;
@@ -16,31 +12,30 @@
 
   &__title {
     border-radius: 16px;
-    margin-top: 75px;
-    width: 70vw;
-    background-color: rgba(243, 243, 243, 0.9);
+    margin: 75px 5vw 20px 5vw;
     display: flex;
     flex-direction: column;
     text-align: left;
     font-size: 28rem;
     line-height: 28rem;
 
-    &>h1{
+    & > h1 {
       font-size: 60rem;
     }
 
-    &>h2, &>h1{
+    & > h2,
+    & > h1 {
       letter-spacing: 3px;
       margin: 5px 0;
     }
-    &>p{
+    & > p {
       color: $secondary;
       letter-spacing: 1px;
       margin: 5px 0;
     }
   }
 
-  &__transparent{
+  &__transparent {
     width: 20%;
   }
 }
@@ -49,8 +44,10 @@
   .hero {
     height: 480px;
     align-items: center;
-    background-size:  auto 40vw;
-    background-color: transparent;
+    background-image: url("../asset/Home/Hero.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: auto 35vw;
     font-size: 22rem;
 
     &__title {
@@ -59,8 +56,8 @@
       width: 50vw;
       margin: 0;
     }
-    
-    &__transparent{
+
+    &__transparent {
       width: 50%;
     }
   }
@@ -69,13 +66,13 @@
 @media only screen and (min-width: 1200px) {
   .hero {
     height: 700px;
-    background-size:  auto 40vw;
-    
+    background-position: right top;
+    background-size: auto 40vw;
+
     &__title {
       padding: 50px;
       background-color: transparent;
       width: 40vw;
     }
   }
-  
 }
