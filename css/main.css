@@ -645,5 +645,39 @@ nav {
       -ms-flex-positive: 1;
           flex-grow: 1;
   text-align: center;
+  font-size: 24px;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5vw;
+}
+
+.contact__card {
+  padding: 5vw;
+  background-color: #2985b0;
+  background-image: url("../asset/Home/Contact.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+  border-radius: 20px;
+  color: white;
+}
+
+.contact__explain {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 24px;
+  font-family: "Coolvetica Condensed Rg", sans-serif;
 }
 /*# sourceMappingURL=main.css.map */
