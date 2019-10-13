@@ -1,10 +1,7 @@
 .projects {
-  font-size: $fs-normal;
-  font-family: $coolveticaRegular;
 
   &__title {
     display: inline-block;
-    justify-content: center;
 
     padding-bottom: 10px;
     border-bottom: 5px dashed $color-secondary;
@@ -30,34 +27,39 @@
   }
 
   &__info {
-    background-color: $color-primary;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+
+    padding: 50px;
+    background-color: $color-primary;
   }
 
   &__image {
-    height: 100%;
-    width: auto;
-    flex: 1 1 40%;
-
     display: flex;
     justify-content: center;
+
+    height: auto;
+    width: 18em;
+    margin-top: 5em;
   }
 
   &__explain {
+    
     flex: 1 1 60%;
     max-width: 700px;
     padding: 30px;
     
-    text-align: right;
-    letter-spacing: .2em;
-    font-size: 24px;
+    text-align: justify;
+    letter-spacing: .1em;
     color: white;
 
     &__codice {
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
+      position: relative;
+      top:-1.5em
     }
 
     &__codice > img{
@@ -72,6 +74,41 @@
       border-radius: 1em;
       letter-spacing: .1em;
       line-height: .5em;
+    }
+  }
+
+  &__pag div {
+    margin-left: .5em;
+    border-radius: 3em;
+    width: 1em;
+    height: 1em;
+    background-color:$color-secondary
+  }
+}
+
+@media only screen and (min-width:1200px){
+  .projects{
+    &__info{
+      padding: 0 15px;
+    }
+    &__explain{
+      text-align: right;
+
+      &__codice{
+        width: 100%;
+        justify-content: flex-end;
+        position: relative;
+        right: -6em;
+      }
+
+      &__btn{
+        position: relative;
+        right: 0;
+      }
+    }
+
+    &__image{
+      margin-top: 0;
     }
   }
 }

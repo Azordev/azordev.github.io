@@ -1,8 +1,8 @@
 .services{
-    font-size: $fs-normal;
+    /*font-size: $fs-normal;*/
     color: $color-primary;
     margin: 50px 0em;
-    font-family: $coolveticaRegular;
+    /*font-family: $coolveticaRegular;*/
     
     &__header{
         display: inline-block;
@@ -17,7 +17,8 @@
         line-height: 20rem;
 
         &>h1 {
-            font-size: $fs-section-title;
+            font-size: $fs-section-title * 1;
+            margin-bottom: 0.2em;
         }
         
         &>h4{
@@ -31,7 +32,7 @@
 
     &__cardGroups{
         max-width: 1440px;
-        margin: 10px 4em;
+        margin: 10px auto;
         justify-items: center;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));

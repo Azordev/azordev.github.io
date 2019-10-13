@@ -3,13 +3,21 @@ header {
 }
 
 nav {
-  background-color: transparent;
-  margin: 0 auto;
-  max-width: 1200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 14rem;
+
+  position: fixed;
+
+  background-color: transparent;
+  padding: 0 5em;
+  width: 100%;
+
+  font-size: .8em;
+
+  & > ul > li{
+    color: white
+  }
 }
 
 .logo {
@@ -31,13 +39,20 @@ nav {
   vertical-align: middle;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 992px) {
+  nav{
+    padding: 0 2em;
+    font-size: 0.6em;
+  }
+  
   .nav-links {
+
     display: flex;
+    justify-content: flex-end;
     letter-spacing: 1px;
 
     & > .nav-item:last-child {
-      border: 1.5px solid rgb(88, 8, 88);
+      border: 1.5px solid white;
       border-radius: 20px;
 
       &:hover {
@@ -56,6 +71,7 @@ nav {
     padding: 10px 15px;
     text-decoration: none;
     text-align: center;
+    color: white;
   }
 
   .nav-item:hover {
@@ -67,6 +83,10 @@ nav {
   }
 }
 @media only screen and (min-width: 1200px) {
+  nav{
+    padding: 0 2em;
+    font-size: .8em;
+  }
   .nav-links {
     display: flex;
   }

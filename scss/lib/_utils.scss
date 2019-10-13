@@ -15,6 +15,10 @@
   display: block;
 }
 
+.justify-end{
+  justify-content: flex-end;
+}
+
 /*--------------------*/
 /*-----Backgounds-----*/
 /*--------------------*/
@@ -48,10 +52,10 @@
 /*-----Typography-----*/
 /*--------------------*/
 .text-st {
-  font-size: $fs-section-title * 2;
+  font-size: $fs-section-title * 1.2;
 }
 .text-sst {
-  font-size: $fs-section-subtitle * 2;
+  font-size: $fs-section-subtitle * 1.2;
 }
 .text-title {
   font-size: $fs-section-title;
@@ -99,67 +103,71 @@
 }
 
 /*----- Font Family -----*/
-.ff-regular{
-    font-family: $coolveticaRegular;
+.ff-regular {
+  font-family: $coolveticaRegular;
 }
-.ff-light{
-    font-family: $coolveticaLight;
+.ff-light {
+  font-family: $coolveticaLight;
 }
-.ff-thin{
-    font-family: $coolveticaThin;
+.ff-thin {
+  font-family: $coolveticaThin;
 }
-.ff-bold{
-    font-family: $coolveticaBold;
+.ff-bold {
+  font-family: $coolveticaBold;
 }
 
 /*----------------------------*/
 /*------Paddings/Margins------*/
 /*----------------------------*/
-.pd{
-    padding: $padding-regular ;
+.pd {
+  padding: $padding-regular;
 }
 
-.pd-l{
-    padding: $padding-light;
+.pd-l {
+  padding: $padding-light;
 }
 
-.pd-h{
-    padding: $padding-hard;
+.pd-h {
+  padding: $padding-hard;
 }
 
 /*----- Margins -----*/
 /*--- Size Margins ---*/
-.m{
-    margin: $margin-regular ;
+.m {
+  margin: $margin-regular;
 }
 
-.m-l{
-    margin: $margin-light;
+.m-l {
+  margin: $margin-light;
 }
 
-.m-h{
-    margin: $margin-hard;
+.m-h {
+  margin: $margin-hard;
 }
 
 /*--- Margins Direction ---*/
 
-.mb{
-    margin-bottom: $margin-regular;
+.mb {
+  margin-bottom: $margin-regular;
 }
 
-.mt{
-    margin-top: $margin-regular;
+.mt {
+  margin-top: $margin-regular;
 }
 
-.ml{
-    margin-left: $margin-regular;
+.mt-h {
+  margin-top: $margin-hard;
+}
+
+.ml {
+  margin-left: $margin-regular;
 }
 
 /*----------------------------*/
 /*----- Width / Heights ------*/
 /*----------------------------*/
-.w-100{
-    width: 100%;
+.w-100 {
+  width: 100%;
 }
 
 /*------------------*/
@@ -189,5 +197,15 @@
   }
   .d-md-none {
     display: none;
+  }
+
+  /*--------------------*/
+  /*-----Typography-----*/
+  /*--------------------*/
+  .text-md-sst {
+    font-size: $fs-section-subtitle * 1.2;
+  }
+  .text-md-title {
+    font-size: $fs-section-title;
   }
 }
