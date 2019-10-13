@@ -1,0 +1,77 @@
+.projects {
+  font-size: $fs-normal;
+  font-family: $coolveticaRegular;
+
+  &__title {
+    display: inline-block;
+    justify-content: center;
+
+    padding-bottom: 10px;
+    border-bottom: 5px dashed $color-secondary;
+    margin-bottom: 3em;
+
+    letter-spacing: 5px;
+    color: $color-secondary;
+    line-height: 20rem;
+
+    & > h1 {
+      font-size: $fs-section-title;
+      margin-bottom: 0.2em;
+    }
+
+    & > h4 {
+      font-size: $fs-section-subtitle;
+    }
+
+    & > h4,
+    & > h1 {
+      padding: 10px 5vw;
+    }
+  }
+
+  &__info {
+    background-color: $color-primary;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__image {
+    height: 100%;
+    width: auto;
+    flex: 1 1 40%;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  &__explain {
+    flex: 1 1 60%;
+    max-width: 700px;
+    padding: 30px;
+    
+    text-align: right;
+    letter-spacing: .2em;
+    font-size: 24px;
+    color: white;
+
+    &__codice {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &__codice > img{
+      max-height: 300px;
+    }
+
+    &__btn {
+      background-color: $color-alt;
+      border: 3px solid $color-secondary;
+      margin-top: 1em;
+      padding:.5em 2em;
+      border-radius: 1em;
+      letter-spacing: .1em;
+      line-height: .5em;
+    }
+  }
+}

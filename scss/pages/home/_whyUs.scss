@@ -1,0 +1,89 @@
+.whyUs {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  max-width: 1400px;
+  width: 80vw;
+  margin: 2em auto;
+  padding: 5em 8em;
+  border-radius: 3em;
+  background-color: $color-secondary;
+  margin-bottom: 5em;
+
+  font-family: $coolveticaRegular;
+  font-size: $fs-normal;
+  color: white;
+
+  &__explain {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 50px;
+    letter-spacing: 0.1em;
+
+    & > h1 {
+      font-size: $fs-section-title;
+      margin-top: 0;
+      padding-top: 0;
+      line-height: 0.8em;
+      margin-bottom: 0.5em;
+      letter-spacing: 0.15em;
+    }
+    & > h3 {
+      font-size: $fs-section-subtitle;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      letter-spacing: 0.15em;
+    }
+
+    & > p {
+      text-align: justify;
+    }
+
+    &__btn {
+      background-color: $color-alt;
+      margin-top: 3em;
+      padding: 0.3em 3em;
+      border: 3px solid $color-primary;
+      border-radius: 1em;
+      letter-spacing: 5px;
+    }
+  }
+
+  &__image {
+    display: flex;
+    order: -1;
+    min-width: 400px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .whyUs {
+    flex-wrap: nowrap;
+    &__explain {
+      max-width: 60%;
+      padding: 50px;
+      letter-spacing: 0.1em;
+    }
+
+    &__image {
+      order: 1;
+    }
+
+    &__btn {
+      align-self: center;
+      background-color: $color-alt;
+      margin-top: 3em;
+      padding: 0.3em 3em;
+      border: 3px solid $color-primary;
+      border-radius: 1em;
+      letter-spacing: 5px;
+    }
+
+    &__btn:hover {
+      background-color: #fff;
+    }
+  }
+}

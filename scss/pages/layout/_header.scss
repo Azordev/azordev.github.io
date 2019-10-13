@@ -14,11 +14,11 @@ nav {
 
 .logo {
   display: block;
-  color: $primary;
+  color: $color-primary;
 
   & > h1 {
-    color: $primary;
-    font-size: 14rem;
+    color: $color-primary;
+    font-size: $fs-section-title ;
   }
 }
 
@@ -62,7 +62,7 @@ nav {
     border-radius: 20px;
 
     & > a {
-      color: $secondary;
+      color: $color-secondary;
     }
   }
 }

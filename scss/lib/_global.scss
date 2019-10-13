@@ -14,9 +14,23 @@
   font-family: "Coolvetica Crammed Rg";
   src: url("../fonts/coolvetica/coolvetica\ crammed\ rg.ttf");
 }
-$coolveticaBold: "Coolvetica Rg", sans-serif;
-$coolveticaRegular: "Coolvetica Condensed Rg", sans-serif;
-$coolveticaLight: "Coolvetica Compressed Rg", sans-serif;
-$coolveticaThin: "Coolvetica Crammed Rg", sans-serif;
-$primary: #2985b0;
-$secondary: #36a9e0;
+
+body{
+  font-size: 16px;
+  font-family: "Coolvetica Rg";
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+  body{
+    font-size: 18px;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  body{
+    font-size: 21px;
+  }
+}
+

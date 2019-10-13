@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Sytyles Guide</title>
+</head>
+<style>
+    .card {
+        /*margin: 1em;*/
+        border: 1px solid gray;
+        /*padding: 1em;*/
+        -webkit-box-shadow: -15px 18px 21px -17px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -15px 18px 21px -17px rgba(0, 0, 0, 0.75);
+        box-shadow: -15px 18px 21px -17px rgba(0, 0, 0, 0.75);
+    }
+
+    .border-title {
+        border-bottom: 3px solid grey;
+        margin-bottom: 0.5em;
+    }
+
+    .box {
+        width: 5em;
+        height: 5em;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .underline-Style {
+        border-bottom: 5px dashed #36a9e0;
+    }
+</style>
+
+<body class="container">
+    <div class="text-center">
+        <h1 class="text-st text-c-p">Azordev</h1>
+        <h2 class="text-sst text-c-s d-inline-block underline-Style">Styles Guide</h2>
+
+    </div>
+
+    <section id="colors" class="card pd-h m w-100">
+        <h2 class="text-title border-title">Colors</h2>
+
+        <h3 class="text-subtitle text-c-a">Colors Brand</h3>
+        <div class="d-flex">
+            <div class="bg-primary box ml">Primary: #2983AE</div>
+            <div class="bg-secondary box ml">Secondary: #64B2E5</div>
+            <div class="bg-alt box ml">Alter: #288ACA</div>
+            <div class="bg-blued box ml">Blued: #2D95FE</div>
+        </div>
+
+        <h3 class="text-subtitle text-c-a">Texture Colors</h3>
+        <div class="d-flex">
+            <div class="bg-info box ml">Info: #33b5e5</div>
+            <div class="bg-warning box ml">Warning: #00C851</div>
+            <div class="bg-success box ml">Success: #ffbb33</div>
+            <div class="bg-alert box ml">Alert: #ff4444</div>
+        </div>
+    </section>
+
+    <section id="typography" class="card pd-h m w-100">
+        <h2 class="text-title text-c-a border-title">Typography</h2>
+        <article id="sizes">
+            <h3 class="text-subtitle">Sizes:</h3>
+            <p>Desktop/Tablet Base: 21px (Screen > 768px)</p>
+            <p>Mobile Base: 18px (Screen > 576px)</p>
+            <p>Small Mobile Base: 16px (Screen < 576)</p> <br>
+
+                    <h3 class="text-st text-info">Super Title:</h3>
+                    <p class="text-subtitle text-right">Base * 3.5 * 2</p>
+                    <h3 class="text-sst text-success">Super Subitle:</h3>
+                    <p class="text-subtitle text-right">Base * 1.8 * 2</p>
+                    <h3 class="text-title text-warning">Title:</h3>
+                    <p class="text-subtitle text-right">Base * 2</p>
+                    <h3 class="text-subtitle text-alert">Subtitle:</h3>
+                    <p class="text-subtitle text-right">Base * 1.8</p>
+                    <p><strong>Paragraphs: Base</strong></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente molestiae repudiandae deserunt
+                        corrupti,
+                        magnam modi praesentium id ipsam assumenda vero! Recusandae assumenda voluptatum sunt tenetur
+                        ipsa similique
+                        vel debitis voluptatem.Voluptas minima quae ducimus architecto expedita nisi enim consequuntur
+                        fugiat dolor
+                        vel illum facilis saepe repellendus maiores exercitationem veritatis optio omnis, error, amet
+                        sapiente nihil
+                        sint quia cum. Reiciendis, inventore.</p>
+        </article>
+
+        <article id="family">
+            <h2 class="text-title text-c-p border-title mt">Font Family: Coolvetica</h2>
+            <div>
+                <h3 class="text-subtitle text-c-s ">Regular:</h3>
+                <p class="text-info">ABCDEFGHIJKLMNÑOPQRSTUVWXYZ</p>
+                <p class="text-success">abcdefghijklmnñopqrstuvwxyz</p>
+                <p class="text-warning">1234567890!"#$%&/()=?¿{-+´´</p>
+            </div>
+            <div class="ff-bold">
+                <h3 class="text-subtitle text-c-s">Bold:</h3>
+                <p class="text-info">ABCDEFGHIJKLMNÑOPQRSTUVWXYZ</p>
+                <p class="text-success">abcdefghijklmnñopqrstuvwxyz</p>
+                <p class="text-warning">1234567890!"#$%&/()=?¿{-+´´</p>
+            </div>
+            <div class="ff-light">
+                <h3 class="text-subtitle text-c-s">Ligth:</h3>
+                <p class="text-info">ABCDEFGHIJKLMNÑOPQRSTUVWXYZ</p>
+                <p class="text-success">abcdefghijklmnñopqrstuvwxyz</p>
+                <p class="text-warning">1234567890!"#$%&/()=?¿{-+´´</p>
+            </div>
+            <div class="ff-thin">
+                <h3 class="text-subtitle text-c-s">Thin:</h3>
+                <p class="text-info">ABCDEFGHIJKLMNÑOPQRSTUVWXYZ</p>
+                <p class="text-success">abcdefghijklmnñopqrstuvwxyz</p>
+                <p class="text-warning">1234567890!"#$%&/()=?¿{-+´´</p>
+            </div>
+
+        </article>
+
+
+
+    </section>
+
+    <section class="card pd-h w-100 mb">
+        <h2 class="text-c-p text-title">Buttons</h2>
+        <h3 class="text-subtitle border-title">Colors</h3>
+        <div class="d-flex mb">
+            <div class="mb">
+                <p class="text-subtitle">Primary:</p>
+
+                <button class="btn btn__ps">BUTTON PS</button>
+                <br>
+                <button class="btn btn__pa">BUTTON PA</button>
+                <br>
+                <button class="btn btn__pb">BUTTON PB</button>
+                <br>
+
+            </div>
+            <div class="mb">
+                <p class="text-subtitle">Secondary:</p>
+
+                <button class="btn btn__sp">BUTTON SP</button>
+                <br>
+                <button class="btn btn__sa">BUTTON SA</button>
+                <br>
+                <button class="btn btn__sb">BUTTON SB</button>
+                <br>
+
+            </div>
+            <div class="mb">
+                <p class="text-subtitle">Alter:</p>
+
+                <button class="btn btn__ap">BUTTON AP</button>
+                <br>
+                <button class="btn btn__as">BUTTON AS</button>
+                <br>
+                <button class="btn btn__ab">BUTTON AB</button>
+                <br>
+            </div>
+            <div class="mb">
+                <p class="text-subtitle">Blued:</p>
+
+                <button class="btn btn__bp">BUTTON BP</button>
+                <br>
+                <button class="btn btn__bs">BUTTON BS</button>
+                <br>
+                <button class="btn btn__ba">BUTTON BA</button>
+                <br>
+            </div>
+        </div>
+        <h3 class="text-subtitle border-title">Sizes:</h3>
+        <div class="d-flex">
+            <div class="mb">
+                <div style="border: 1px sold gray; padding: 10px; width:600px;    ">
+                    <button class="btn btn__sp btn__sm">BUTTON SM</button>
+                </div>
+                <div style="border: 1px sold gray; padding: 10px; width:600px;    ">
+                    <button class="btn btn__ps">BUTTON REGULAR</button>
+                </div>
+                <div style="border: 1px sold gray; padding: 10px; width:600px;    ">
+                    <button class="btn btn__bp btn__block">BUTTON BLOCK</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

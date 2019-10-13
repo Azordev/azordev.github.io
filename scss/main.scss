@@ -1,0 +1,17 @@
+@import "lib/reset";
+@import "lib/global";
+@import "lib/variables";
+@import "lib/utils";
+@import "lib/mixins";
+
+@import "base/buttons";
+
+@import "pages/layout/header";
+@import "pages/layout/footer";
+@import "pages/layout/layout";
+
+@import "pages/home/hero";
+@import "pages/home/services";
+@import "pages/home/whyUs";
+@import "pages/home/projects";
+@import "pages/home/contact";

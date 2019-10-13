@@ -1,0 +1,133 @@
+.hero {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: $coolveticaRegular;
+  font-size: $fs-normal;
+  color: #2985b0;
+
+  &__container {
+    display: flex;
+    height: 100%;
+    flex: 1 1 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    border-radius: 16px;
+    margin: 0.1em 5vw 20px 5vw;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    flex: 1 1 100%;
+    align-content: center;
+    justify-content: center;
+    text-align: left;
+    font-size: $fs-normal;
+    line-height: 28rem;
+    align-items: center;
+
+    & > h1 {
+      font-size: $fs-section-title * 2;
+      margin-top: 0.5em;
+    }
+
+    & > h2 {
+      font-size: $fs-section-subtitle * 1;
+    }
+
+    & > h2,
+    & > h1 {
+      letter-spacing: 3px;
+      margin: 0.2em 0;
+    }
+  }
+
+  &__transparent {
+    display: none;
+    visibility: hidden;
+    flex-basis: 100%;
+    background-image: url("../asset/Home/Hero.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 100%
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    height: 40vw;
+
+    &__container {
+      align-items: center;
+    }
+
+    &__title {
+      background-color: transparent;
+      width: 50vw;
+      margin: 0;
+
+      & > h1 {
+        font-size: $fs-section-title * 1.2;
+      }
+
+      & > h2 {
+        font-size: $fs-section-title * 0.3;
+      }
+      
+    }
+    
+    &__img-container{
+      height: auto;
+      width: 12em;
+    }
+    
+    &__transparent {
+      display: flex;
+      visibility: visible;
+      height: 100%;
+      flex-basis: 100%;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .hero {
+
+    &__title {
+      & > h1 {
+        font-size: $fs-section-title * 1.5;
+      }
+
+      & > h2 {
+        font-size: $fs-section-title * 0.5;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero {
+    /*height: 100vh;*/
+    margin-top: 0;
+
+    &__title {
+      margin-top: 5vw;
+      padding: 50px;
+      background-color: transparent;
+      width: 40vw;
+
+      & > h1 {
+        font-size: $fs-section-title * 2;
+      }
+
+      & > h2 {
+        font-size: $fs-section-title * .5;
+      }
+    }
+  }
+}
