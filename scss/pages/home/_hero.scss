@@ -46,17 +46,17 @@
     background-image: url("../asset/Home/Hero.png");
     background-repeat: no-repeat;
     background-position: right top;
-    background-size: 100%;
+    background-size: 95%;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .hero {
-    height: 50vw;
+    height: 37vw;
 
     &__container {
       align-items: center;
-      max-width: 35%;
+      max-width: 46%;
     }
 
     &__title {
