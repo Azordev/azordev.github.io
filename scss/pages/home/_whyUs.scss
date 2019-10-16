@@ -41,15 +41,6 @@
     & > p {
       text-align: justify;
     }
-
-    &__btn {
-      background-color: $color-alt;
-      margin-top: 3em;
-      padding: 0.3em 3em;
-      border: 3px solid $color-primary;
-      border-radius: 1em;
-      letter-spacing: 5px;
-    }
   }
 
   &__image {
@@ -69,20 +60,6 @@
 
     &__image {
       order: 1;
-    }
-
-    &__btn {
-      align-self: center;
-      background-color: $color-alt;
-      margin-top: 3em;
-      padding: 0.3em 3em;
-      border: 3px solid $color-primary;
-      border-radius: 1em;
-      letter-spacing: 5px;
-    }
-
-    &__btn:hover {
-      background-color: #fff;
     }
   }
 }

@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   
-  max-width: 1400px;
+  max-width: 1200;
   width: 80vw;
   margin: 2em auto;
   padding: 1.5em;
@@ -25,6 +25,11 @@
 
   &-img{
     flex: 1 1 100%;
+    margin-left: 1em;
+
+    img{
+      margin-left: 1em;
+    }
   }
 }
 
@@ -48,9 +53,8 @@
             order: 1;
             flex: 1 1 30%;
 
-            svg{
+            img{
                 width: 15em;
-                margin-left: -2em;
                 position: relative;
                 left: 3em;
             }
