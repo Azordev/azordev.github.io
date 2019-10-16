@@ -209,3 +209,21 @@
     font-size: $fs-section-title;
   }
 }
+
+  /*--------------------*/
+  /*----Placeholders----*/
+  /*--------------------*/
+
+  %background-image-main{
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: right -50px;
+    background-size:  auto 600px;
+  }
+
+  %background-image-left{
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size:  auto 50vh;
+  }

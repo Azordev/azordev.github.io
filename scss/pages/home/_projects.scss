@@ -1,5 +1,4 @@
 .projects {
-
   &__title {
     display: inline-block;
 
@@ -46,23 +45,24 @@
   }
 
   &__explain {
-    
     flex: 1 1 60%;
     max-width: 700px;
-    padding: 30px;
-    
+    padding: 20px;
+
+    font-family: $coolveticaRegular;
+    font-size: $fs-normal;
     text-align: justify;
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
     color: white;
 
     &__codice {
       display: flex;
       justify-content: center;
       position: relative;
-      top:-1.5em
+      top: -1.5em;
     }
 
-    &__codice > img{
+    &__codice > img {
       max-height: 300px;
     }
 
@@ -70,44 +70,44 @@
       background-color: $color-alt;
       border: 3px solid $color-secondary;
       margin-top: 1em;
-      padding:.5em 2em;
+      padding: 0.5em 2em;
       border-radius: 1em;
-      letter-spacing: .1em;
-      line-height: .5em;
+      letter-spacing: 0.1em;
+      line-height: 0.5em;
     }
   }
 
   &__pag div {
-    margin-left: .5em;
+    margin-left: 0.5em;
     border-radius: 3em;
     width: 1em;
     height: 1em;
-    background-color:$color-secondary
+    background-color: $color-secondary;
   }
 }
 
-@media only screen and (min-width:1200px){
-  .projects{
-    &__info{
+@media only screen and (min-width: 1200px) {
+  .projects {
+    &__info {
       padding: 0 15px;
     }
-    &__explain{
+    &__explain {
       text-align: right;
 
-      &__codice{
+      &__codice {
         width: 100%;
         justify-content: flex-end;
         position: relative;
         right: -6em;
       }
 
-      &__btn{
+      &__btn {
         position: relative;
         right: 0;
       }
     }
 
-    &__image{
+    &__image {
       margin-top: 0;
     }
   }

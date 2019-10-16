@@ -5,14 +5,6 @@
   box-sizing: border-box;
 }
 
-/* Remove default padding */
-ul[class],
-ol[class],
-dd {
-  padding: 0;
-  list-style: none;
-}
-
 /* Remove default margin */
 body,
 h1,
@@ -22,15 +14,21 @@ h4,
 h5,
 h6,
 p,
-ul[class],
-ol[class],
+ul,
+ol,
 li,
 figure,
 figcaption,
 blockquote,
 dl,
 dd {
+  padding: 0;
   margin: 0;
+}
+ul,
+ol,
+dd {
+  list-style: none;
 }
 
 html {
@@ -42,7 +40,7 @@ html {
 }
 
 body {
-  font-size: 10px;
+  font-size: 16rem;
   margin: 0;
   min-height: 100vh;
   line-height: 1.5;
@@ -100,24 +98,19 @@ h6 {
 }
 
 pre {
-  font-family: monospace, monospace;
+  font-family: monospace;
   font-size: 1em;
 }
 
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
-
-a[class] {
+a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
   background-color: transparent;
 }
 
-abbr[title] {
+abbr {
   border-bottom: none;
-  text-decoration: underline;
   text-decoration: underline dotted;
 }
 
@@ -192,22 +185,19 @@ input {
   color: inherit;
   padding: 0;
   margin: 1px;
-  border: 1px solid grey;
+  border: 1px solid gray;
 }
+
 input[type="submit"],
 input[type="button"],
 input[type="reset"] {
   cursor: pointer;
-  border: 1px solid grey;
+  border: 1px solid gray;
 }
+
 input:disabled {
-  border: 1px solid grey;
+  border: 1px solid gray;
   cursor: not-allowed;
-}
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-  margin: 0;
 }
 
 input:focus,
@@ -216,36 +206,6 @@ select:focus {
   outline: none;
 }
 
-button,
-select {
-  text-transform: none;
-}
-
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  border: 1px solid grey;
-}
-
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted blue;
-}
-
-button:disabled {
-  cursor: not-allowed;
-}
 button {
   background-color: transparent;
   color: inherit;
@@ -254,30 +214,23 @@ button {
   cursor: pointer;
 }
 
+button,
+select {
+  text-transform: none;
+}
+
+button {
+  border: 1px solid grey;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
 fieldset {
   border-width: 0;
   padding: 0;
   margin: 0;
-}
-
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box;
-  padding: 0;
-}
-
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-[type="search"] {
-  -webkit-appearance: textfield;
-  outline-offset: -2px;
-}
-
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
 }
 
 ::-webkit-file-upload-button {
