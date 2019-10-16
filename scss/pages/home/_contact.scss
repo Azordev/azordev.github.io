@@ -1,0 +1,59 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  
+  max-width: 1400px;
+  width: 80vw;
+  margin: 2em auto;
+  padding: 1.5em;
+  background-color: $color-primary  ;
+  border-radius: 2em;
+
+  text-align: justify;
+  color: white;
+
+  .explain{
+    order: 1;
+  }
+  .mail {
+    display: flex;
+    flex: 1 1 100%;
+    flex-direction: column;
+    margin: 1em;
+    align-items: center;
+  }
+
+  &-img{
+    flex: 1 1 100%;
+  }
+}
+
+@media only screen and (min-width: 768px){
+    .contact{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        
+        width: 100%;
+
+        .explain{
+            max-width: 650px;
+            order:0;
+            flex: 1 1 70%;
+        }
+
+        &-img{
+            max-width: 20%;
+            order: 1;
+            flex: 1 1 30%;
+
+            svg{
+                width: 15em;
+                margin-left: -2em;
+                position: relative;
+                left: 3em;
+            }
+        }
+    }
+}

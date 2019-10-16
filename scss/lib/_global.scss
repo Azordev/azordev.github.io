@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Coolvetica Rg";
+  src: url("../fonts/coolvetica/coolvetica\ rg.ttf");
+}
+@font-face {
+  font-family: "Coolvetica Condensed Rg";
+  src: url("../fonts/coolvetica/coolvetica\ condensed\ rg.ttf");
+}
+@font-face {
+  font-family: "Coolvetica Compressed Rg";
+  src: url("../fonts/coolvetica/coolvetica\ compressed\ rg.ttf");
+}
+@font-face {
+  font-family: "Coolvetica Crammed Rg";
+  src: url("../fonts/coolvetica/coolvetica\ crammed\ rg.ttf");
+}
+
+body{
+  font-size: 16px;
+  font-family: "Coolvetica Rg";
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+  body{
+    font-size: 18px;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  body{
+    font-size: 21px;
+  }
+}
+

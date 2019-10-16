@@ -1,0 +1,11 @@
+@mixin center-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin max-width{
+    @include center-flex;
+    margin: 0 auto;
+    max-width: 1200px;
+}
