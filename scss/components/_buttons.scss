@@ -1,0 +1,175 @@
+/*
+%btn-placeholder {
+    display: inline-block;
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: $fs-normal;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+}
+*/
+.btn{
+    color: #fff;
+    letter-spacing: 0.18em;
+    border-radius:2em;
+    /*--- btn primary ---*/
+    &-ps{
+        background-color: $color-primary;
+        border: 0.18em solid $color-secondary;
+    }
+
+    &-ps:hover {
+        color:#fff;
+        background-color: $color-secondary;
+        border-color: $color-primary;
+    }
+
+    &-pt{
+        background-color: $color-primary;
+        border: 0.18em solid $color-third;
+    }
+    &-pt:hover{
+        color:#fff;
+        background-color: $color-third;
+        border: 0.18em solid $color-primary;
+    }
+
+    &-pb{
+        background-color: $color-primary;
+        border: 0.18em solid $color-blued;
+    }
+
+    &-pb:hover{
+        color:#fff;
+        background-color: $color-blued;
+        border: 0.18em solid $color-primary;
+    }
+
+    /*--- btn secondary ---*/
+    &-sp{
+        background-color: $color-secondary;
+        border: 0.18em solid $color-primary;
+    }
+
+    &-sp:hover{
+        color:#fff;
+        background-color: $color-primary;
+        border: 0.18em solid $color-secondary;
+    }
+
+    &-st{
+        background-color: $color-secondary;
+        border: 0.18em solid $color-third;
+    }
+
+    &-st:hover{
+        color:#fff;
+        background-color: $color-third;
+        border: 0.18em solid $color-secondary;
+    }
+
+    &-sb{
+        background-color: $color-secondary;
+        border: 0.18em solid $color-blued;
+    }
+
+    &-sb:hover{
+        color:#fff;
+        background-color: $color-blued;
+        border: 0.18em solid $color-secondary;
+    }
+
+    /*--- btn thirder ---*/
+    &-tp{
+        background-color: $color-third;
+        border: 0.18em solid $color-primary;
+    }
+
+    &-tp:hover{
+        color:#fff;
+        background-color: $color-primary;
+        border: 0.18em solid $color-third;
+    }
+
+    &-ts{
+        background-color: $color-third;
+        border: 0.18em solid $color-secondary;
+    }
+
+    &-ts:hover{
+        color:#fff;
+        background-color: $color-secondary;
+        border: 0.18em solid $color-third;
+    }
+
+    &-tb{
+        background-color: $color-third;
+        border: 0.18em solid $color-blued;
+    }
+
+    &-tb:hover{
+        color:#fff;
+        background-color: $color-blued;
+        border: 0.18em solid $color-third;
+    }
+    
+    /*--- btn blued ---*/
+    &-bp{
+        background-color: $color-blued;
+        border: 0.18em solid $color-primary;
+    }
+
+    &-bp:hover{
+        color:#fff;
+        background-color: $color-primary;
+        border: 0.18em solid $color-blued;
+    }
+
+    &-bs{
+        background-color: $color-blued;
+        border: 0.18em solid $color-secondary;
+    }
+
+    &-bs:hover{
+        color:#fff;
+        background-color: $color-secondary;
+        border: 0.18em solid $color-blued;
+    }
+
+    &-bt{
+        background-color: $color-blued;
+        border: 0.18em solid $color-third;
+    }
+
+    &-bt:hover{
+        color:#fff;
+        background-color: $color-third;
+        border: 0.18em solid $color-blued;
+    }
+
+    
+    /*--- Btn Sizes ---*/
+    /*
+    &__block{
+        display: block;
+        width: 100%;
+    }
+
+    &__sm{
+        padding: 0.25em em;
+        font-size: 0.875em;
+        line-height: 1.5;
+    }
+   */
+}
+
+  

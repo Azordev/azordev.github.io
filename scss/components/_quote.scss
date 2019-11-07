@@ -1,0 +1,73 @@
+.Quote {
+  border-radius: 3em;
+  min-height: 30rem;
+}
+
+.Count {
+  border-radius: 3em;
+  min-height: 6rem;
+}
+
+.Icon-Count-Quote {
+  max-width: 4em;
+  max-height: auto;
+}
+
+.Services-Circle {
+  width: 1rem;
+}
+
+%S {
+  transition: all 1.2s ease-in-out;
+  &:hover {
+    transition: all 0.5s ease-in-out;
+    figure{
+      transform: scale(1.2);;
+    }
+    cursor: pointer;
+    .Services-Circle {
+      &::after {
+        position: absolute;
+        width: 95%;
+        content: "";
+        border-top: 2px solid $color-primary;
+      }
+    }
+  }
+  .Services-Circle {
+    /*background: white !important;*/
+      &::after {
+        position: absolute;
+        width: 95%;
+        content: "";
+        border-top: 2px solid white;
+      }
+  }
+}
+
+.S1{
+  @extend %S;
+  position: relative;
+  top:1.1 rem;
+}
+.S2{
+  @extend %S;
+}
+.S3{
+  @extend %S;
+}
+
+
+.QuoteArrow {
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    color: #f8f8f8;
+    transform: scale(1.3);
+  }
+}
+
+.c_effect {
+  background: $color-primary !important;
+}

@@ -1,0 +1,57 @@
+$max-width : 1200px;
+
+/* ---------------*/
+/* ----Z-Index----*/
+/* ---------------*/
+$z-back    : -10;
+$z-normal  : 1;
+$z-tooltip : 10;
+$z-fixed   : 100;
+$z-modal   : 1000;
+
+:root {
+    --z-back    : -10;
+    --z-normal  : 1;
+    --z-tooltip : 10;
+    --z-fixed   : 100;
+    --z-modal   : 1000;
+}
+
+/* ---------------*/
+/* -----Images----*/
+/* ---------------*/
+$images-path: '/assets';
+
+/* ---------------*/
+/* -----Colors----*/
+/* ---------------*/
+$color-primary : #226B8E;
+$color-primary-alt : lighten($color-primary,15%);
+
+$color-secondary : #64B2E5;
+$color-secondary-alt : #00BFF0;
+
+$color-third : #288ACA;
+$color-third-alt : #288ACA;
+
+$color-blued : #2D95FE;
+$color-blued-alt : #2D95FE;
+
+
+
+$color-info:#33b5e5;
+$color-success:#00C851;
+$color-warning:#ffbb33;
+$color-alert:#ff4444;
+
+$color-dark : #282D31;
+$color-dark-alt : #141618;
+
+$color-border : #DFE0E0;
+$color-light : #F6F6F6;
+
+$color-text : #53575A;
+$color-text-light : #BABDBF;
+$color-text-alt: #B3894F;
+
+$color-body-bg : #FAFDFF;

@@ -46,6 +46,10 @@ body {
   line-height: 1.5;
 }
 
+main{
+  min-width: calc(100vh - 69px - 208px);
+}
+
 template,
 [hidden] {
   display: none;

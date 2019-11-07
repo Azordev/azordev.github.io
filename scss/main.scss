@@ -1,16 +1,28 @@
-@import "lib/reset";
-@import "lib/global";
-@import "lib/variables";
-@import "lib/utils";
-@import "lib/mixins";
+/*@import "lib/reset";*/
+@import "config/variables";
 
-@import "base/buttons";
+@import "lib/_bootstrap-grid";
+@import "lib/_bootstrap-utils";
+@import "config/_utils";
 
-@import "pages/layout/header";
-@import "pages/layout/footer";
-@import "pages/layout/layout";
+@import "theme/typography";
 
-@import "pages/home/hero";
+/*----------------*/
+/*---Components---*/
+/*----------------*/
+@import "components/buttons";
+@import "components/header.scss";
+@import "components/footer";
+@import "components/titleSection";
+@import "components/quote";
+/*----------------*/
+/*-----Layouts----*/
+/*----------------*/
+@import "layout/layout";
+
+
+@import "pages/services";
+@import "pages/home/heroHome";
 @import "pages/home/services";
 @import "pages/home/whyUs";
 @import "pages/home/weAre";
@@ -18,9 +30,3 @@
 @import "pages/home/world";
 @import "pages/home/projects";
 @import "pages/home/contact";
-
-@import "pages/services/main";
-@import "pages/services/request";
-@import "pages/services/quote";
-@import "pages/services/choose";
-@import "pages/services/plans";

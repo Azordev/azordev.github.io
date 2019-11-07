@@ -1,0 +1,137 @@
+.heroServices {
+    height: 100vh;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2985b0;
+  
+    &__container {
+      display: flex;
+      height: 100%;
+      flex: 1 1 30%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  
+    &__title {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      flex: 1 1 40%;
+      justify-content: center;
+      align-items: center;
+  
+      /*text-align: center;*/
+  
+      & > h1 {
+        margin: 0 inherit;
+      }
+  
+      & > h2 {
+        margin: 0 inherit;
+      }
+  
+      & > h2,
+      & > h1 {
+        letter-spacing: 5px;
+        line-height: 1em;
+      }
+    }
+  
+    &__transparent {
+      display: none;
+      visibility: hidden;
+      flex: 2 1 60%;
+      background-image: url("../asset/Services/hero.svg");
+      background-repeat: no-repeat;
+      background-position: right top;
+      background-size: 95%;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .heroServices {
+      height: 37vw;
+
+      margin-left: 5em;
+  
+      &__container {
+        align-items: center;
+        max-width: 46%;
+      }
+  
+      &__title {
+        width: 50vw;
+  
+        & > h1 {
+          font-size: $fs-section-title * 0.5;
+        }
+  
+        & > h2 {
+          font-size: $fs-section-subtitle * 0.5;
+        }
+  
+  
+      }
+      &__img-container {
+        width: 6em;
+        height: auto;
+        position: relative;
+        top: -25px;
+      }
+  
+      &__transparent {
+        display: flex;
+        visibility: visible;
+        height: 100%;
+        flex-basis: 70%;
+        width: 12em;
+        position: relative;
+        top: -2.5em;
+        z-index: -1;
+      }
+    }
+  }
+  
+  @media only screen and (min-width: 992px) {
+    .heroServices {
+  
+      &__title {
+        
+        & > h1 {
+          font-size: $fs-section-title * .8 ;
+        }
+  
+        & > h2 {
+          font-size: $fs-section-subtitle * .8;
+        }
+      }
+      
+            &__img-container {
+              width: 10em;
+              top: -25px;
+            }  
+    }
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    .heroServices {
+  
+      &__title {
+        
+        & > h1 {
+          font-size: $fs-section-title * 1.2;
+        }
+  
+        & > h2 {
+          font-size: $fs-section-subtitle * 1.2 ;
+        }
+  
+      }
+      &__transparent {
+        max-width: 1100px;
+      }
+    }
+  }
+  

@@ -1,0 +1,33 @@
+.difference {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    
+    padding: $padding-hard;
+    
+    color:white;
+    text-align: center;
+    
+    background: rgb(125,185,232); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(125,185,232,1) 7%, rgba(30,87,153,1) 88%, rgba(30,87,153,1) 98%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(125,185,232,1) 7%,rgba(30,87,153,1) 88%,rgba(30,87,153,1) 98%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(125,185,232,1) 7%,rgba(30,87,153,1) 88%,rgba(30,87,153,1) 98%); 
+
+    .pictures{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .img-weAre{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .picture{
+        margin: 1em 1em;
+        min-width: 250px;
+        max-width: 320px;
+    }
+}

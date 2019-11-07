@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html dir="ltr" prefix="og: http://ogp.me/ns#" lang="es">
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -31,88 +32,88 @@
   <meta name="author" content="Israel Laguan" />
   <link rel="shortcut icon" href="asset/azordev.png" />
   <link href="css/preloader.css" rel="stylesheet" />
-  <link rel="stylesheet" href="scss/main.css" />
+  <link rel="stylesheet" href="./css/main.css" />
 </head>
 
 <body>
-  <div id="preloader-background">
-    <div class="preloader"></div>
-  </div>
-
   <header>
-    <h1 hidden>Azordev Software</h1>
-    <nav>
-      <a href="https://freecodecamp.org" class="logo">
-        <img src="asset/azordev.png" alt="Azordev logo" />
-        <!--<h1>AZORDEV</h1>--->
-      </a>
-      <ul class="nav-links">
-        <li class="nav-item"><a href="#">SERVICIOS</a></li>
-        <li class="nav-item"><a href="#">CONOCENOS</a></li>
-        <li class="nav-item"><a href="#">PORTAFOLIO</a></li>
-        <li class="nav-item"><a href="#">BLOG</a></li>
-        <li class="nav-item"><a href="#">CONTACTANOS</a></li>
-      </ul>
-    </nav>
+    <h1 hidden>Home</h2>
+      <nav class="d-flex justify-content-between container-fluid">
+        <a href="./index.html" class="logo">
+          <img src="./asset/azordev.png" alt="Azordev logo" />
+        </a>
+        <ul class="nav-links">
+          <li class="nav-itm"><a class="text-light" href="./index.services.html">SERVICIOS</a></li>
+          <li class="nav-itm"><a class="text-light" href="#">CONOCENOS</a></li>
+          <li class="nav-itm"><a class="text-light" href="#">PORTAFOLIO</a></li>
+          <li class="nav-itm"><a class="text-light" href="#">BLOG</a></li>
+          <li class="nav-itm"><a class="text-light" href="#">CONTACTANOS</a></li>
+        </ul>
+      </nav>
   </header>
   <main>
-    <section class="hero">
-      <div class="hero__container">
-        <div class="hero__title">
-          <h2 class="text-subtitle w-100">BIENVENIDO A</h2>
-          <h1 class="text-title text-md-title">AZORDEV</h1>
-          <div class="hero__img-container">
+    <section class="Hero d-flex heroHome">
+      <div class="heroHome__container">
+        <div class="heroHome__title">
+          <h3 class="text-subtitle display-4">¡Bienvenido a casa!</h3>
+          <div class="heroHome__img-container">
             <img src="./asset/azordev.png">
+            <h2 class="text-title text-md-title display-4 p-0 m-0">AZORDEV</h2>
           </div>
+          <button class="btn btn-st rounded-pill btn-lg">Empezar</button>
         </div>
       </div>
-      <div class="hero__transparent">
+      <div class="heroHome__transparent">
       </div>
     </section>
 
-    <section class="services">
-      <div class="services__header">
-        <h4>Nuestros</h4>
-        <h1>SERVICIOS</h1>
+    <section class="Services">
+      <div class="TitleSection">
+        <h3 class="h2 mb-0 pb-0 pl-5">Nuestros</h4>
+          <h2 class="display-2 m-0 p-0 pl-5">SERVICIOS</h2>
       </div>
-      <div class="services__cardGroups">
+      <div class="my-5 services__cardGroups">
         <div class="servicesCard">
           <img src="asset/Services/WebPages.png" alt="webpages" />
-          <h1>Diseno Web</h1>
+          <h3>Diseño Web</h2>
         </div>
         <div class="servicesCard">
           <img src="asset/Services/Marketing.png" alt="marketing" />
-          <h1>Marketing Digital</h1>
+          <h3>Marketing Digital</h2>
         </div>
         <div class="servicesCard">
           <img src="asset/Services/Development.png" alt="development" />
-          <h1>Desarrollo de Software</h1>
+          <h3>Desarrollo de Software</h2>
         </div>
         <div class="servicesCard">
           <img src="asset/Services/Apps.png" alt="Apps" />
-          <h1>Aplicaciones Moviles</h1>
+          <h3>Aplicaciones Moviles</h2>
         </div>
+    </section>
+
+    <section class="WeAre">
+      <div class="team-image">
+        <img src="./asset/KnowUs/team.svg" alt="">
+      </div>
+      <div>
+        <h2 class="h1">Somos un equipo</h2>
+        <p class="d-inline-block h4">Profesionales de diversas áreas que ponemos nuestro talento a tu servicio <br />
+          Compometidos a llevarte al exito
+        </p>
+
+
+      </div>
     </section>
 
     <section class="whyUs">
       <div class="whyUs__explain">
         <h3>¿Porqué</h3>
-        <h1>Nosotros?</h1>
+        <h2>Nosotros?</h2>
         <p>Queremos que tus proyectos digitales estén en buenas manos y que alcancen el mejor nivel en el mercado.</p>
         <p>Nosotros nos encargamos que tus ideas se hagan realidad.</p>
-        <button class="btn btn__ba mt-h">CONTÁCTANOS</button>
+        <button class="btn btn-bt mt">CONTÁCTANOS</button>
       </div>
       <div class="whyUs__image"><img src="asset/Home/WhyUs.png" alt="why us" /></div>
-    </section>
-
-    <section class="weAre mt mb">
-      <div class="team-image">
-        <img src="./asset/KnowUs/team.svg" alt="">
-      </div>
-      <div>
-        <h2 class="text-title">Somos un equipo</h2>
-        <h3 class="text-subtitle">Que esta listo para llevarte al exito</h3>
-      </div>
     </section>
 
     <section class="difference">
@@ -162,15 +163,18 @@
         <h3 class="text-subtitle">A CUALQUIER PARTE DEL MUNDO</h3>
       </div>
       <div class="wave">
-          <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.27,150.48 C159.99,192.92 157.73,25.16 550.51,-29.11 L500.00,150.00 L-0.27,149.50 Z" style="stroke: none; fill: #fcfcfc;"></path></svg></div>
+        <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+            style="height: 100%; width: 100%;">
+            <path d="M-0.27,150.48 C159.99,192.92 157.73,25.16 550.51,-29.11 L500.00,150.00 L-0.27,149.50 Z"
+              style="stroke: none; fill: #fcfcfc;"></path>
+          </svg></div>
       </div>
     </section>
 
-
     <section class="projects">
-      <div class="projects__title">
-        <h4>Nuestros</h4>
-        <h1>Proyectos</h1>
+      <div class="TitleSection text-left text-md-center mb-5">
+        <h3 class="h1 mb-0 pb-0 pl-sm-5 ">Nuestros</h4>
+          <h2 class="display-2 m-0 p-0 pl-sm-5">Proyectos</h2>
       </div>
       <div class="projects__info">
         <div class="projects__image">
@@ -179,15 +183,15 @@
 
         <div class="projects__explain">
           <figure class="projects__explain__codice">
-            <img src="asset/Home/Codice.png" alt="codice" />
+            <img src="asset/Home/Codice2.png" alt="codice" />
           </figure>
           <p>
             Es un proyecto encargado de hacer estudios de experiencia de usuario mediante las sitios webs, de esta forma
             validar su funcionalidad y crear una mejor interacción de los clientes, con esta.
           </p>
-          <button class="projects__explain__btn">CONOCER MÁS</button>
+          <button class="btn btn-ts">CONOCER MÁS</button>
 
-          <div class="d-flex justify-end mt-h projects__pag">
+          <div class="d-flex justify-content-end mt-5 projects__pag">
             <div></div>
             <div></div>
             <div></div>
@@ -216,28 +220,31 @@
         <img src="./asset/pcContact.svg" alt="">
       </div>
     </section>
+
+
+
   </main>
 
   <footer class="footer">
-    <figure>
-      <img src="./asset/azordev.png" alt="">
-    </figure>
-    <div>
-      <ul>
-        <li><a href="#">Portafolio</a></li>
-        <li><a href="#">Blog</a></li>
-      </ul>
-    </div>
-    <div>
-      <ul>
-        <li><a href="#">Conócenos</a></li>
-        <li><a href="#">Contáctanos</a></li>
-      </ul>
+    <div class="footer-container">
+      <figure>
+        <img src="./asset/azordev.png" alt="">
+      </figure>
+      <div>
+        <ul>
+          <li><a href="#">Portafolio</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li><a href="#">Conócenos</a></li>
+          <li><a href="#">Contáctanos</a></li>
+        </ul>
+      </div>
     </div>
   </footer>
   <script src="js/preloader/preloader.js"></script>
 </body>
-
-</html>
 
 </html>

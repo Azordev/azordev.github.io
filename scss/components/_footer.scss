@@ -1,0 +1,37 @@
+.footer{
+    background-color: $color-primary;
+    color: white;
+    
+    .footer-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    
+        max-width: 1200px;
+        position:relative;
+        bottom: 0;
+        margin:auto
+        
+    }
+
+    div ul{
+        margin-right: 1em;
+    }
+
+    div ul li{
+        list-style: none;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
+
+    figure img{
+        max-width: 100px;
+    }
+}
