@@ -1,0 +1,13 @@
+.TitleSection {
+  display: inline-block;
+
+  text-align: left;
+  padding-bottom: 10px;
+  border-bottom: 5px dashed $color-secondary;
+
+  margin: 5rem 0 0;
+
+  letter-spacing: 5px;
+  color: $color-secondary;
+  line-height: 20rem;
+}

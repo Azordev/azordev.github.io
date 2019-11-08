@@ -1,0 +1,89 @@
+header {
+  font-family: $coolveticaBold;
+  font-size: 0.7rem;
+}
+
+nav {
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+  padding: 0 5em;
+  width: 100%;
+
+  & > ul > li > a {
+    color: #fff;
+  }
+
+  & > ul {
+    list-style: none;
+  }
+}
+
+.logo img {
+  width: 50px;
+  vertical-align: middle;
+}
+
+.nav-links{
+  display: none;
+  visibility: hidden;
+}
+
+@media only screen and (min-width: 992px) {
+  header {
+    font-size: 0.8rem;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+  }
+
+  .nav-links {
+    visibility: visible;
+    display: flex;
+    justify-content: flex-end;
+    letter-spacing: 1px;
+
+    & > .nav-item:last-child {
+      border: 1.5px solid white;
+      border-radius: 20px;
+
+      &:hover {
+        background-color: rgb(88, 8, 88);
+      }
+
+      &:hover > a {
+        color: white;
+      }
+    }
+  }
+
+  .nav-itm a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+  }
+
+  .nav-itm:hover {
+    border-radius: 20px;
+
+    & > a {
+      color: $color-secondary;
+    }
+  }
+  .nav-links {
+    display: flex;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  header{
+    font-size: 0.9rem;
+  }
+  nav {
+    padding: 0 2em;
+  }
+}

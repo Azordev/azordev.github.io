@@ -1,0 +1,41 @@
+.Services{
+    margin: 0 0 2rem 0;
+}
+
+.Hero{
+    height: 75vh;
+    position: relative;
+    top: -4rem;
+}
+
+.Home{
+    margin: 5rem 0;
+}
+
+.WeAre{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 0 3rem 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+@media (min-width: 576px) {
+    .Home{
+        margin: 0;
+    }
+}
+/*
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+*/

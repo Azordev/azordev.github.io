@@ -1,0 +1,139 @@
+.bg-primary-alt {
+  background-color: $color-primary-alt !important;
+}
+.bg-secondary-alt {
+  background-color: $color-secondary-alt !important;
+}
+
+.bg-third {
+  background-color: $color-third !important;
+}
+
+.bg-blued {
+  background-color: $color-blued !important;
+}
+
+
+
+.border-third {
+  border-color: $color-third !important;
+}
+
+
+
+.text-third {
+  color: $color-third !important;
+}
+
+.text-blued {
+  color: $color-blued !important;
+}
+
+
+
+.btn-third {
+  color: #fff;
+  background-color: $color-third;
+  border-color: $color-third;
+}
+
+/* este hay que moverlo de bootstrap*/
+.btn-third:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+/* ojo */
+.btn-third.disabled,
+.btn-third:disabled {
+  color: #fff;
+  background-color: $color-third;
+  border-color: $color-third;
+}
+
+.btn-outline-third {
+  color: $color-third;
+  border-color: $color-third;
+}
+
+.btn-outline-third:hover {
+  color: #fff;
+  background-color: $color-third;
+  border-color: $color-third;
+}
+
+.btn-outline-third.disabled,
+.btn-outline-third:disabled {
+  color: $color-third;
+  background-color: transparent;
+}
+
+.btn-outline-third:not(:disabled):not(.disabled):active,
+.btn-outline-third:not(:disabled):not(.disabled).active,
+.show > .btn-outline-third.dropdown-toggle {
+  color: #fff;
+  background-color: $color-third;
+  border-color: $color-third;
+}
+
+.btn-link {
+  font-weight: 400;
+  color: $color-third;
+  text-decoration: none;
+}
+
+.text-alt {
+  color: #b3894f !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .display-1 {
+    font-size: 6.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+
+  .display-2 {
+    font-size: 5.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+
+  .display-3 {
+    font-size: 4.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+
+  .display-4 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .display-1 {
+    font-size: 5.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+
+  .display-2 {
+    font-size: 4.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+
+  .display-3 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+
+  .display-4 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+}

@@ -13,7 +13,6 @@
   margin-bottom: 5em;
 
   font-family: $coolveticaRegular;
-  font-size: $fs-normal;
   color: white;
 
   &__explain {
@@ -24,7 +23,7 @@
     letter-spacing: 0.1em;
 
     & > h1 {
-      font-size: $fs-section-title * .8;
+    
       margin-top: 0;
       padding-top: 0;
       line-height: 0.8em;
@@ -32,7 +31,6 @@
       letter-spacing: 0.15em;
     }
     & > h3 {
-      font-size: $fs-section-subtitle ;
       margin-bottom: 0;
       padding-bottom: 0;
       letter-spacing: 0.15em;
@@ -40,15 +38,6 @@
 
     & > p {
       text-align: justify;
-    }
-
-    &__btn {
-      background-color: $color-alt;
-      margin-top: 3em;
-      padding: 0.3em 0;
-      border: 3px solid $color-primary;
-      border-radius: 1em;
-      letter-spacing: 5px;
     }
   }
 
@@ -69,20 +58,6 @@
 
     &__image {
       order: 1;
-    }
-
-    &__btn {
-      align-self: center;
-      background-color: $color-alt;
-      margin-top: 3em;
-      padding: 0.3em 3em;
-      border: 3px solid $color-primary;
-      border-radius: 1em;
-      letter-spacing: 5px;
-    }
-
-    &__btn:hover {
-      background-color: #fff;
     }
   }
 }
