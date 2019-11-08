@@ -1,4 +1,5 @@
-.heroHome {
+.Home {
+  display: flex;
   align-items: center;
   color: #2985b0;
 
@@ -47,7 +48,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .heroHome {
+  .Home {
     height: 37vw;
 
     &__container {
@@ -79,7 +80,7 @@
 }
 
 @media only screen and (min-width: 992px) {
-  .heroHome {
+  .Home {
     &__img-container {
       width: 10em;
       top: -35px;

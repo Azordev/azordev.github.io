@@ -14476,7 +14476,7 @@ nav > ul {
 
 .S1 {
   position: relative;
-  top: 1.1 rem;
+  top: 1.1rem;
 }
 
 .QuoteArrow {
@@ -14506,6 +14506,10 @@ nav > ul {
   top: -4rem;
 }
 
+.Home {
+  margin: 5rem 0;
+}
+
 .WeAre {
   display: flex;
   flex-wrap: nowrap;
@@ -14516,6 +14520,23 @@ img {
   max-width: 100%;
 }
 
+@media (min-width: 576px) {
+  .Home {
+    margin: 0;
+  }
+}
+/*
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+*/
 .Cotizar {
   margin-bottom: 10rem;
 }
@@ -14616,18 +14637,19 @@ img {
     height: 30vh;
   }
 }
-.heroHome {
+.Home {
+  display: flex;
   align-items: center;
   color: #2985b0;
 }
-.heroHome__container {
+.Home__container {
   display: flex;
   height: 100%;
   flex: 1 1 30%;
   max-width: 1200px;
   margin: 0 auto;
 }
-.heroHome__title {
+.Home__title {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
@@ -14636,17 +14658,17 @@ img {
   align-items: center;
   text-align: center;
 }
-.heroHome__title > h1 {
+.Home__title > h1 {
   margin: 0 inherit;
 }
-.heroHome__title > h2 {
+.Home__title > h2 {
   margin: 0 inherit;
 }
-.heroHome__title > h2, .heroHome__title > h1 {
+.Home__title > h2, .Home__title > h1 {
   letter-spacing: 5px;
   line-height: 1em;
 }
-.heroHome__transparent {
+.Home__transparent {
   display: none;
   visibility: hidden;
   flex: 2 1 60%;
@@ -14657,23 +14679,23 @@ img {
 }
 
 @media only screen and (min-width: 768px) {
-  .heroHome {
+  .Home {
     height: 37vw;
   }
-  .heroHome__container {
+  .Home__container {
     align-items: center;
     max-width: 46%;
   }
-  .heroHome__title {
+  .Home__title {
     width: 50vw;
   }
-  .heroHome__img-container {
+  .Home__img-container {
     width: 6em;
     height: auto;
     position: relative;
     top: -25px;
   }
-  .heroHome__transparent {
+  .Home__transparent {
     display: flex;
     visibility: visible;
     height: 100%;
@@ -14685,7 +14707,7 @@ img {
   }
 }
 @media only screen and (min-width: 992px) {
-  .heroHome__img-container {
+  .Home__img-container {
     width: 10em;
     top: -35px;
   }
